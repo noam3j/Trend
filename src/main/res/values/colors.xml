@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextPrimary">#000000</color>
+    <color name="calendar_background">#ffffff</color>
+    <color name="blankTrendDay">#b9b9b9</color>
+    <color name="lightTrendDay">#ffffff</color>
+    <color name="darkTrendDay">#000000</color>
+    <color name="gemmedTrendDay">#ff89c2</color>
+    <color name="blankTrendDayBorder">#b9b9b9</color>
+    <color name="lightTrendDayBorder">#ffffff</color>
+    <color name="darkTrendDayBorder">#000000</color>
+    <color name="gemmedTrendDayBorder">#ff89c2</color>
+    <color name="blankTrendDayText">#ffffff</color>
+    <color name="darkTrendDayText">#000000</color>
+    <color name="lightTrendDayText">#ffffff</color>
+    <color name="gemmedTrendDayText">#ffffff</color>
+    <color name="info_background">#2b2b2b</color>
+    <color name="info_text">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

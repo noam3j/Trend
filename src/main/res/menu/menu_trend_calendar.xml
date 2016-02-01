@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TrendCalendarActivity">
+
+    <item
+        android:id="@+id/calendar"
+        app:showAsAction="always"
+        android:title="calendar"  />
+
+    <item
+        android:id="@+id/new_pic"
+        app:showAsAction="always"
+        android:title="new_pic" />
+
+    <item
+        android:id="@+id/info"
+        app:showAsAction="always"
+        android:title="info" />
+
+</menu>

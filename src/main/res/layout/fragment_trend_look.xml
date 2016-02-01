@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:svg="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp">
+
+    <LinearLayout
+        android:id="@+id/left_menu"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <com.trend.cisc325team3.trend.ImageButtonSVG
+            android:layout_width="@dimen/look_icon_width"
+            android:layout_height="@dimen/look_icon_width"
+            android:id="@+id/more_options_button"
+            svg:file_idle="svg/more_unclicked_black.svg"
+            svg:file_pressed="svg/more_clicked_black.svg"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_menu"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="@dimen/look_icon_width"
+            android:layout_height="@dimen/look_icon_width"
+            android:padding="@dimen/look_icon_padding"
+            android:layout_marginBottom="25dp">
+
+            <com.trend.cisc325team3.trend.ImageButtonSVG
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/day_night_button"
+
+                svg:file_idle="svg/sun_black.svg"
+                svg:file_pressed="svg/sun_black.svg"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/look_icon_width"
+            android:layout_height="@dimen/look_icon_width"
+            android:padding="@dimen/look_icon_padding">
+
+            <com.trend.cisc325team3.trend.ImageButtonSVG
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/gem_it_button"
+                svg:file_idle="svg/gem_black.svg"
+                svg:file_pressed="svg/gem_pink.svg"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.trend.cisc325team3.trend.ImageViewSVG
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/lookView"
+        android:layout_toLeftOf="@id/right_menu"
+        android:layout_toRightOf="@id/left_menu"
+        android:background="@color/black_overlay"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        svg:file="svg/doodle_white.svg"/>
+
+    <TextView
+        android:layout_width="@dimen/look_icon_width"
+        android:layout_height="@dimen/look_icon_width"
+        android:id="@+id/calendar_date"
+        android:textSize="@dimen/look_date_font_size"
+        android:text="OCT\n29"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:layout_toRightOf="@id/left_menu"
+        />
+
+    <LinearLayout
+        android:id="@+id/more_options"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#99000000"
+        android:layout_toRightOf="@id/left_menu">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/look_icon_width"
+            android:layout_height="@dimen/look_icon_width"
+            android:padding="@dimen/look_icon_padding">
+
+            <com.trend.cisc325team3.trend.ImageButtonSVG
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/download_it_button"
+                svg:file_idle="svg/download_white.svg"
+                svg:file_pressed="svg/download_white.svg"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/look_icon_width"
+            android:layout_height="@dimen/look_icon_width"
+            android:padding="@dimen/look_icon_padding">
+
+            <com.trend.cisc325team3.trend.ImageButtonSVG
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/copy_it_button"
+                svg:file_idle="svg/copy_white.svg"
+                svg:file_pressed="svg/copy_white.svg"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/look_icon_width"
+            android:layout_height="@dimen/look_icon_width"
+            android:padding="@dimen/look_icon_padding">
+
+            <com.trend.cisc325team3.trend.ImageButtonSVG
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/share_it_button"
+                svg:file_idle="svg/share_white.svg"
+                svg:file_pressed="svg/share_white.svg"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/look_icon_width"
+            android:layout_height="@dimen/look_icon_width"
+            android:padding="@dimen/look_icon_padding">
+
+            <com.trend.cisc325team3.trend.ImageButtonSVG
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/mail_it_button"
+                svg:file_idle="svg/mail_white.svg"
+                svg:file_pressed="svg/mail_white.svg"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/look_icon_width"
+            android:layout_height="@dimen/look_icon_width"
+            android:padding="@dimen/look_icon_padding">
+
+            <com.trend.cisc325team3.trend.ImageButtonSVG
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/trash_it_button"
+                svg:file_idle="svg/trash_white.svg"
+                svg:file_pressed="svg/trash_white.svg"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
